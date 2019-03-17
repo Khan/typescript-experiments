@@ -3,23 +3,23 @@
 This repo is to experiment with typescript to evaluate whether or not to migrate
 from flow.
 
-## Experiments
+# Experiments
 
-# Array and Object methods
+## Array and Object methods
 
 [object-array.ts](src/object-array.ts) contains some examples where typescripte does
 a better job of infer correct types and catching type errors without requiring lots
 of additional type declarations when using common methods such as: `filter`, `map`,
 and `Object.entries`.
 
-# React
+## React
 
 [Foo](src/foo.tsx) and [Bar](src/bar.tsx) components shows different situations in 
 which typescript will detect invalid props.  I was worried typescript not catching
 invalid props when spreading props, but it appears it does except for tags.  We should
 be able to lint against spreads in tags.
 
-# hyperscript-react
+## hyperscript-react
 
 This library interests me because it provides an easy to use non-JSX way of construct
 React elements.  There are a few issues with JSX that make it less than ideal:
